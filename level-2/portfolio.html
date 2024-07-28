@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .header {
+            background-color: #b3d7ad;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        .logo span {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .navb {
+            display: flex;
+            justify-content: center;
+            margin: 10px 0;
+        }
+        .navb a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 5px 10px;
+        }
+        .navb a:hover,
+        .navb .act {
+            background-color: #99b896;
+            border-radius: 5px;
+        }
+        .contact {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+        .home {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100vh;
+            padding-top: 70px;
+        }
+        .home h1 span {
+            color: #a7c9d5;
+        }
+        .home img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .about,
+        .skills,
+        .projects,
+        .contact-f {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .about h2 span,
+        .contact-f h2 span {
+            color: #9dc7c5;
+        }
+        .skills ul,
+        .projects ul {
+            list-style: none;
+            padding: 0;
+        }
+        .skills li,
+        .projects li {
+            background-color: #7e9eb0;
+            color: #fff;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .contact-f form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .input-b {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .input-b input {
+            margin: 10px;
+            padding: 10px;
+            width: 200px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        textarea {
+            margin: 10px;
+            padding: 10px;
+            width: calc(100% - 40px);
+            max-width: 600px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .btn-1 {
+            background-color: #8eb87e;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn-1:hover {
+            background-color: #ced3bd;
+        }
+        footer {
+            background-color: #afb79f;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo"><span>Sravani Soorapu</span></a>
+        <nav class="navb">
+            <a href="#" class="act">Portfolio</a>
+            <a href="#">Skills</a>
+            <a href="#">Projects</a>
+            <a href="#">Education</a>
+        </nav>
+        <a href="#" class="contact">Contact Me</a>
+    </header>
+    <section class="home">
+        <div class="home-cont">
+            <h3>Hi</h3>
+            <h1>I'm<span> Sravani Soorapu<br></span> a web developer</h1>
+            <p>I am a dedicated and versatile professional with a passion for developing websites,</p>
+            <p>In addition to my technical skills, I am a strong communicator and a proactive problem-solver.</p>
+            <p>I believe in the power of teamwork and strive to contribute positively to every team I join.</p>
+        </div>
+        <div class="img">
+            <img src="image.jpg" alt=" ">
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="about-im">
+            <!-- Add an image or additional content here if needed -->
+        </div>
+        <div class="about-cont">
+            <h2 class="head">About<span> Me</span></h2>
+            <h3>web <span>Developer</span></h3>
+            <p>My name is Sravani Soorapu. I am pursuing my degree at Aditya Institute of Technology Management College of Engineering,</p>
+            <p>Andhra Pradesh, in the department of CSM.</p>
+            <p>My approach to work is defined by a commitment to excellence and a collaborative spirit.</p>
+        </div>
+    </section>
+    <div class="skills">
+        <h1>My Skills</h1>
+        <ul>
+            <li>C Language</li>
+            <li>Python</li>
+            <li>Java</li>
+            <li>Web Development</li>
+            <li>SQL</li>
+            <li>Data Structures</li>
+        </ul>
+    </div>
+    <div class="projects">
+        <h1>PROJECTS</h1>
+        <p>I have done mini projects using Python on:</p>
+        <ul>
+            <li>Calculator</li>
+            <li>Password Generator</li>
+        </ul>
+    </div>
+    <section class="contact-f">
+        <h2 class="contact-me">Contact<span> Me</span></h2>
+        <form action="#">
+            <div class="input-b">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email">
+            </div>
+            <div class="input-b">
+                <input type="number" placeholder="Contact Number">
+                <input type="text" placeholder="Subject">
+            </div>
+            <textarea cols="30" rows="10" placeholder="Message"></textarea>
+            <input type="submit" value="Send Message" class="btn-1">
+        </form>
+    </section>
+    <footer>
+        <h2>Connect with me through email: sravanisoorapu@gmail.com</h2>
+        <h2>Phone: 9020646038</h2>
+    </footer>
+</body>
+</html>
